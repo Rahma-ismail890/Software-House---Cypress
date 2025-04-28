@@ -1,0 +1,20 @@
+[
+    {
+      "test":"invalid email",
+      "name": "Rahma",
+      "email": "Rahmaayman@gmail.c",
+      "phone": "1202488313",
+      "country": "United Kingdom",
+      "message": "Hello, I have a question.",
+      "errorMessage":"Oops Something happened Please try again Later"
+    },
+    {
+      "test":"invalid email",
+      "name": "Jane Smith",
+      "email": "Jane@gmail.com",
+      "phone": "7911123",
+      "country": "Egypt",
+      "message": "Need help with my order.",
+      "errorMessage":"+207911123 is not a valid phone number!"
+    }
+  ]

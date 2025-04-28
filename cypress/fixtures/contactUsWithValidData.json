@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Rahma Ayman",
+      "email": "Rahmaayman@gmail.com",
+      "phone": "1202488313",
+      "country": "Egypt",
+      "message": "Hello, I have a question."
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "7911123456",
+      "country": "United Kingdom",
+      "message": "Need help with my order."
+    },
+    {
+      "name": "Ali Ahmed",
+      "email": "ali.ahmed@example.com",
+      "phone": "501234567",
+      "country": "United Arab Emirates",
+      "message": "Can I get more information?"
+    }
+  ]

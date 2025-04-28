@@ -1,0 +1,48 @@
+[
+    {
+      "test":"empty name",
+      "name": "",
+      "email": "Rahmaayman@gmail.com",
+      "phone": "1202488313",
+      "country": "Egypt",
+      "message": "Hello, I have a question.",
+      "validationMessage":"The Name Is Required"
+    },
+    {
+      "test":"empty email",
+      "name": "Jane Smith",
+      "email": "",
+      "phone": "7911123456",
+      "country": "United Kingdom",
+      "message": "Need help with my order.",
+      "validationMessage":"The Email Is Required"
+    },
+    {
+      "test":"empty phone",
+      "name": "Ali Ahmed",
+      "email": "ali.ahmed@example.com",
+      "phone": "",
+      "country": "United Arab Emirates",
+      "message": "Can I get more information?",
+      "validationMessage":"Phone Number is required"
+    }
+    ,
+    {
+      "test":"empty message",
+      "name": "Ahmed Negm",
+      "email": "ahmed@example.com",
+      "phone": "1203322424",
+      "country": "Egypt",
+      "message": "",
+      "validationMessage":"The your Message Is Required"
+    },
+    {
+      "test":"empty fields",
+      "name": "",
+      "email": "",
+      "phone": "",
+      "country": "Egypt",
+      "message": "",
+      "validationMessage":"The your Message Is Required"
+    }
+  ]
