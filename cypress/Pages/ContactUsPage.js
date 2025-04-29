@@ -1,11 +1,20 @@
 class ContactUs{
+
+    Name ='[placeholder="enter your full name"]'; 
+    Email = '[placeholder="enter your email"]';
+    Message = '[placeholder="Leave your Message"]';
+    Button = "button";
+    CountryCode = ".PhoneInputCountrySelect";
+    Phone = '[name="phoneNumber"]';
+    Popup = 'h2';
+    ErrorMessage ='div';
     visit(){
         cy.visit("/")
         cy.get('a').contains('Contact Us').click();
     }
 
     getFullNameField(){
-        return cy.get('[placeholder="enter your full name"]')
+        return cy.get(this.Name);
     }
 
     fillFullName(name)
@@ -19,7 +28,7 @@ class ContactUs{
     }
 
     getEmailField(){
-        return cy.get('[placeholder="enter your email"]')
+        return cy.get(this.Email)
     }
     fillEmail(email)
     {
@@ -33,7 +42,7 @@ class ContactUs{
     
     getMessageField()
     {
-        return cy.get('[placeholder="Leave your Message"]')
+        return cy.get(this.Message);
     }
     fillMessage(message)
     {
@@ -46,15 +55,15 @@ class ContactUs{
     }
     clickSubmitBTN()
     {
-        cy.get("button").contains("submit").click();
+        cy.get(this.Button).contains("submit").click();
     }
     selectCountryCode(country)
     {
-        cy.get(".PhoneInputCountrySelect").select(country);
+        cy.get(this.CountryCode).select(country);
     }
     getPhoneField()
     {
-        return cy.get('[name="phoneNumber"]')
+        return cy.get(this.Phone);
     }
     fillphone(phone)
     {
@@ -72,22 +81,22 @@ class ContactUs{
    
     succesMssage()
     {
-      return  cy.get('h2').contains("Successful Process")
+      return  cy.get(this.Popup).contains("Successful Process")
     }
     clickOnDoneBtn(BtnName)
    {
-     cy.get("button").contains(BtnName).click();
+     cy.get(this.Button).contains(BtnName).click();
    }
   
    fieldIsRequiredMessage(validationMessage)
    {
-       return cy.get('div').contains(validationMessage)
+       return cy.get(this.ErrorMessage).contains(validationMessage)
    }
    errorPopup(errorMessage)
    {
-    return cy.get('div').contains(errorMessage)
+    return cy.get(this.ErrorMessage).contains(errorMessage)
    }
 
 }
 
-export default ContactUs;
+export default  ContactUs;
